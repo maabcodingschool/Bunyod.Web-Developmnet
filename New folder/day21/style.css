@@ -1,0 +1,50 @@
+
+ 
+* {
+      box-sizing: border-box;
+  }
+  
+  body {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      height: 100vh;
+      overflow: hidden;
+      margin: 0;
+      background-color: rgb(20, 166, 185);
+  }
+
+  .empty {
+      height: 150px;
+      width: 150px;
+      margin-top: 10px;
+      border: solid 3px black;
+      background: #ccc;
+  }
+
+  .fill {
+      background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTrCMn0nTWhOTnL4KcTOkrUEUoN0MfxU6NIQm6iZFDcM0hfjjWOcFVj0waVpldCNpRFzss&usqp=CAU);
+      height: 145px;
+      width: 145px;
+      cursor: pointer;
+  }
+
+  .hold {
+      border: solid 5px #ccc;
+  }
+
+
+  .hovered {
+      background-color: #333;
+      border-color: white;
+      border-style:dashed ;
+  }
+
+
+
+  @media (max-width:800px) {
+      body {
+          flex-direction: column;
+      }
+  }
